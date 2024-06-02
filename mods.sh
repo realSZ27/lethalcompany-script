@@ -2,7 +2,7 @@
 
 number=1
 
-lethalCompanyDir='/run/media/deck/8d6b7a8c-3438-4d30-a279-03ac9405b35e/steamapps/common/Lethal Company'
+lethalCompanyDir='/home/deck/.local/share/Steam/steamapps/common/Lethal Company'
 
 # Array of links
 downloadLinks=(
