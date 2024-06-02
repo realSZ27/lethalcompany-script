@@ -60,6 +60,8 @@ cp -r ./temp/BepInExPack/* $lethalCompanyDir
 rm -rf ./temp
 echo "Finished installing BepInEx"
 
+read -p "Press Enter to continue..."
+
 # Temporary folder for downloading and extracting contents
 tempFolder="./temp"
 
