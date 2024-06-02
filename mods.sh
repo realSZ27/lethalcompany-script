@@ -41,6 +41,25 @@ downloadLinks=(
 	"https://thunderstore.io/package/download/AinaVT/LethalConfig/1.4.2/"
 )
 
+echo "Installing BepInEx..."
+
+mkdir -p "./temp"
+	
+# Specify the local path where you want to save the downloaded file
+downloadFilePath="./temp/BepInEx.zip"
+
+# Download the file using Invoke-WebRequest
+curl -L -o "$downloadFilePath" "https://thunderstore.io/package/download/BepInEx/BepInExPack/5.4.2100/"
+	
+# Unzip the contents to the specified temporary destination folder
+unzip -o "$downloadFilePath" -d "./temp/"
+
+cp -r ./temp/BepInExPack/* $lethalCompanyDir
+
+# Remove the temporary download folder
+rm -rf ./temp
+echo "Finished installing BepInEx"
+
 # Temporary folder for downloading and extracting contents
 tempFolder="./temp"
 
